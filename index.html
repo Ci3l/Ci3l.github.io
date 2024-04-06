@@ -42,6 +42,16 @@
 
 
 <style>
+    .citation {
+        font-style: italic;
+        border-left: 2px solid #000;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+    .auteur {
+        margin-top: 10px;
+        font-weight: bold;
+    }
     :root {
         --text-color: #343a40;
         --text-secondary-color: #6c757d;
@@ -104,7 +114,7 @@ Erwan Poiré | Portfolio
                 
                 <img src="/fav.png" width="30" height="30"
                     class="d-inline-block align-top">
-                Portfolio
+                Home
                 
             </a>
 
@@ -162,8 +172,7 @@ Erwan Poiré | Portfolio
 
                     
                     
-                    
-                    
+                    <!--
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/blogs" title="Blog posts">
                             
@@ -180,6 +189,7 @@ Erwan Poiré | Portfolio
                             Gallery
                         </a>
                     </li>
+                    -->
                     
                     
                 </ul>
@@ -222,10 +232,10 @@ Erwan Poiré | Portfolio
                     Erwan.
                 </h2>
                 <h3>
-                    Je sais faire quelques trucs sympa
+                    Je fais des Mathématiques et de l&#39;Algorithmique.
                 </h3>
                 <p class="hero-content">
-                    Je suis un lycéen passioné par la finance, la programmation et l&rsquo;art.
+                    Je suis étudiant en <a href="https://dauphine.psl.eu/formations/licences/l1-mathematiques-informatique">L1 MIDO à Paris Dauphine.</a>
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
@@ -239,18 +249,20 @@ Erwan Poiré | Portfolio
         </a>
     </span>
     
+    <!--
     <span class="px-1">
         <a href="https://fr.quora.com/profile/Erwan-Poir%c3%a9" target="_blank" class="btn social-icon">
             <i class="fab fa-quora"></i>
         </a>
     </span>
+    -->
     
     <span class="px-1">
         <a href="https://www.linkedin.com/in/erwan-poir%c3%a9/" target="_blank" class="btn social-icon">
             <i class="fab fa-linkedin"></i>
         </a>
     </span>
-    
+
 
     
 </span></div>
@@ -538,10 +550,21 @@ Erwan Poiré | Portfolio
         <div class="bg-transparent row justify-content-center px-3 py-5">
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
-                Je développe des programmes plus ou moins utiles que je publie sur mon <a href="https://github.com/Ci3l">github</a>.
+                <p style="text-align: justify;">Salut à tous. Je suis profondément immergé dans le monde des mathématiques et de l'informatique, fasciné par leur potentiel d'abstraction et leur impact sur la compréhension du monde qui nous entoure. Les mathématiques, en particulier, m'ont toujours semblé être le langage ultime de la réalité, offrant une vérité indéniable et des possibilités infinies d'exploration.</p>
+
+                <p style="text-align: justify;">Quant à l'informatique, je suis convaincu que c'est là que se situe l'avenir de l'innovation et du progrès humain. Les conversations avec des entrepreneurs du secteur et mes propres expériences dans des projets m'ont ouvert les yeux sur le potentiel révolutionnaire de la blockchain et de l'intelligence artificielle. Ces technologies semblent être les outils par excellence pour façonner un avenir meilleur pour l'humanité.</p>
+
+                <p style="text-align: justify;">Mon cheminement académique, notamment au cours de ma première année en L1 MIDO, a profondément influencé ma perspective sur le monde. Cela m'a non seulement initié à la pensée scientifique et à la rigueur intellectuelle, mais aussi renforcé mon amour des sciences et ma volonté de contribuer au bien commun.</p>
+
+                <p style="text-align: justify;">Mon objectif ultime est de maîtriser chaque aspect de l'intelligence artificielle, en comprenant à la fois les aspects théoriques et pratiques de son utilisation. De même, je m'efforce de plonger au cœur des technologies sous-jacentes à la blockchain, conscient de leur potentiel révolutionnaire.</p>
+
+                <p style="text-align: justify;">En dehors de mes études et de mes explorations scientifiques, je trouve un équilibre essentiel dans la pratique du sport, notamment les sports de combat. Cette discipline physique me permet de canaliser mon énergie et de rester concentré sur mes objectifs.</p>
+
+                <p style="text-align: justify;">Dans l'ensemble, je crois fermement en la valeur de l'apprentissage continu et de l'exploration intellectuelle. Chaque jour est une occasion de grandir, d'apprendre et de contribuer au monde qui nous entoure. Je suis ouvert aux collaborations et aux échanges avec ceux qui partagent cette même passion pour le savoir et le progrès humain.</p>
+
 
                 
-                Voici les différents languages que je maitrise :
+                Voici les différents languages et loiciels que je maitrise :
                 <ul>
                     
                     <li>Python</li>
@@ -553,6 +576,14 @@ Erwan Poiré | Portfolio
                     <li>C</li>
                     
                     <li>C++</li>
+
+                    <li>Postman</li>
+
+                    <li>Notion</li>
+
+                    <li>VSCode</li>
+
+                    <li>OpenAI API (en cours d'acquisition)</li>
                     
                 </ul>
                 
@@ -633,6 +664,21 @@ Erwan Poiré | Portfolio
                                 aria-controls='Crédit-Mutuel-Asset-Management-Août-2022'
                             >
                                 Crédit Mutuel Asset Management
+                            </div>
+                        </li>
+
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                type="button"
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Pathline-2023-tab'
+                                data-bs-target='#pills-Pathline-2023' 
+                                aria-controls='Pathline-2023'
+                            >
+                                Pathline
                             </div>
                         </li>
                         
@@ -771,11 +817,81 @@ Nos missions étaient :</p>
 
                             <div class="pt-2">
                                 J&rsquo;ai effectué ce stage au sein des locaux de Crédit Mutuel Asset Management à Paris. Durant celui-ci, j&rsquo;ai eu l&rsquo;occasion de faire la connaissance des équipes de gestion et de leur métier, de la gestions actions à la gestion de taux.
-J&rsquo;ai aussi eu l&rsquo;occasion de rencontrer les équipes de <a href="https://www.cic-marketsolutions.eu/fr/index.html">Crédit Mutuel Market Solution</a>.
-Mon stage était toutefois centré sur l&rsquo;activité <a href="https://www.creditmutuel-am.eu/fr/professionnels/nous-connaitre/responsabilite-societale-de-l-entreprise.html">RSE</a> et de <a href="https://www.creditmutuel-am.eu/fr/institutionnels/nos-fonds/fonds-solidaires.html">Finance solidaire</a> du Crédit Mutuel Asset Management.
+                                J&rsquo;ai aussi eu l&rsquo;occasion de rencontrer les équipes de <a href="https://www.cic-marketsolutions.eu/fr/index.html">Crédit Mutuel Market Solution</a>.
+                                Mon stage était toutefois centré sur l&rsquo;activité <a href="https://www.creditmutuel-am.eu/fr/professionnels/nous-connaitre/responsabilite-societale-de-l-entreprise.html">RSE</a> et de <a href="https://www.creditmutuel-am.eu/fr/institutionnels/nos-fonds/fonds-solidaires.html">Finance solidaire</a> du Crédit Mutuel Asset Management.
                             </div>
                         </div>
                         
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Pathline-2023'
+                            aria-labelledby='pills-Pathline-2023-tab'
+                        >
+                            <div>
+                                <span class="h4">Engagement Etudiant Bénévole</span>
+                                <small>-</small>
+                                <a href="https://pathline.fr/" target="_blank">Pathline</a>
+                                
+                                <div class="pb-1">
+                                    <small>Octobre 2023 - Aujourd&#39;hui</small>
+                                    <!--
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=RSE&#32;et&#32;Finance&#32;solidaire
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>-->
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="citation">
+                                <p>Les missions entreprises par Poiré Erwan au sein de l'entreprise dans le cadre de son engagement sont diverses et variées, contribuant de manière significative au développement de l'application web. Les responsabilités et contributions de Poiré Erwan comprennent :</p>
+                                <ol>
+                                    <li>
+                                        <p>Missions de tests et reporting :</p>
+                                        <ul>
+                                            <li>Erwan a effectué des missions approfondies de tests sur la plateforme de Pathline, identifiant les bugs et fournissant un reporting détaillé pour faciliter leur correction efficace.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Proposition d'une nouvelle architecture de stockage :</p>
+                                        <ul>
+                                            <li>Erwan a proposé une nouvelle architecture pour le stockage des informations clients sur Scaleway, en utilisant l'API du service cloud, et participe activement à sa mise en œuvre.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Veille sur les données clients :</p>
+                                        <ul>
+                                            <li>Erwan effectue une veille constante sur les données des clients pour détecter d'éventuelles erreurs et assurer la qualité des informations.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Communication avec les clients :</p>
+                                        <ul>
+                                            <li>Erwan crée des vidéos pour présenter les nouvelles fonctionnalités aux clients, et a efficacement contribué à la rédaction de la dernière release note, compilant toutes les user stories du sprint et rédigeant des descriptions détaillées des bugfix et des nouvelles fonctionnalités.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Documentation et gestion de projet :</p>
+                                        <ul>
+                                            <li>Erwan a entrepris la documentation de la collection de requêtes de l'application web sur Postman, et a acquis d'importantes compétences en matière d’organisation, communication et de maîtrise d'outils tels que Scaleway, Postman, Postgre, ainsi que dans la compréhension du processus de production et de la mise à jour régulière d'une application.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p>L'engagement d’Erwan au sein de Pathline a également été marqué par l'acquisition de compétences en gestion du temps, en conciliant sa vie académique et professionnelle simultanément, ainsi qu'une compréhension approfondie des méthodes de travail d'une équipe. Cela inclut les concepts d’User stories, Sprints, Release notes, la réalisation d'une documentation de requêtes HTML, et la participation au Planning poker.</p>
+                            </div>
+                            <div class="auteur">
+                                <p>— <a href="https://www.linkedin.com/in/dan-dray-03051993/" target="_blank">M.Dray (Co-Founder @ Pathline Mentoring)</a></p>
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
@@ -785,6 +901,7 @@ Mon stage était toutefois centré sur l&rsquo;activité <a href="https://www.cr
 </section>
 
 <section id="education" class="py-5">
+    
     <div class="container">
         <h3 class="text-center">Scolarité</h3>
         <div class="row justify-content-center py-5">
@@ -798,7 +915,54 @@ Mon stage était toutefois centré sur l&rsquo;activité <a href="https://www.cr
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-end">
-                                    <small>2020 - Aujourd&#39;hui</small>
+                                    <small>2023 - Aujourd&#39;hui</small>
+                                </div>
+                                <h5 class="card-title">Licence MIDO (Mathématiques et Informatique des Décisions et de l&#39;Organisation)</h5>
+                                
+                                
+                                <a href="https://dauphine.psl.eu/" target="_blank">
+                                    <h6>
+                                        Université Paris Dauphine-PSL
+                                    </h6>
+                                </a>
+                                
+
+                                <!--
+                                <div class="py-1">
+                                    Note:
+                                    <i>
+                                        <small>19.03/20</small>
+                                    </i> 
+                                </div>
+                                -->
+                                
+                                <div class="py-1 education-content">
+                                    <p>Enseignements :</p>
+                                    <ul>
+                                    <li>Analyse Réelle</li>
+                                    <li>Algèbre Linéaire</li>
+                                    <li>Modèles déterministes et Probabilités finies</li>
+                                    <li>Algorithmics and programming</li>
+                                    <li>Recherche opérationnelle et bases de données</li>
+                                    </ul>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2020 - 2023</small>
                                 </div>
                                 <h5 class="card-title">Bac Général et Technologique</h5>
                                 
@@ -814,17 +978,17 @@ Mon stage était toutefois centré sur l&rsquo;activité <a href="https://www.cr
                                 <div class="py-1">
                                     Note:
                                     <i>
-                                        <small>18.2 sur 20 (à l&#39;année)</small>
+                                        <small>19.03/20</small>
                                     </i> 
                                 </div>
                                 
                                 <div class="py-1 education-content">
                                     <p>Spécialisation :</p>
-<ul>
-<li>Mathématiques</li>
-<li>Science Économique et Sociale</li>
-<li>Anglais Monde Comtemporain</li>
-</ul>
+                                    <ul>
+                                    <li>Mathématiques</li>
+                                    <li>Science Économique et Sociale</li>
+                                    <li>Anglais Monde Comtemporain</li>
+                                    </ul>
 
                                 </div>
 
@@ -834,7 +998,6 @@ Mon stage était toutefois centré sur l&rsquo;activité <a href="https://www.cr
                     </div>
                 </div>
             </div>
-            
             <div class="col-12 p-0">
                 <div class="row row align-items-center justify-content-center m-1 mb-4">
                     
@@ -865,12 +1028,12 @@ Mon stage était toutefois centré sur l&rsquo;activité <a href="https://www.cr
                                 
                                 <div class="py-1 education-content">
                                     <p>Le KET, aujourd&rsquo;hui A2 Key, est une première qualification, à destination des élèves de Collège, permettant de valider le niveau A2 en anglais.
-Détail des résultats :</p>
-<ul>
-<li>Reading and Writing : 130</li>
-<li>Listening : 133</li>
-<li>Speaking : 135</li>
-</ul>
+                                    Détail des résultats :</p>
+                                    <ul>
+                                    <li>Reading and Writing : 130</li>
+                                    <li>Listening : 133</li>
+                                    <li>Speaking : 135</li>
+                                    </ul>
 
                                 </div>
 
@@ -1028,7 +1191,7 @@ Détail des résultats :</p>
 
 <section id="contact" class="py-5">
     <div class="container">
-        <h3 class="text-center">Entrons en contact</h3>
+        <h3 class="text-center">Entrons en contact !</h3>
         <div class="px-0 px-md-5 px-lg-5">
             <div class="row justify-content-center px-md-5">
                 <div class="col-md-8 py-3">
@@ -1069,7 +1232,7 @@ Détail des résultats :</p>
 </div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
-            <div class="pb-2">
+            <!--<div class="pb-2">
                 <a href="http://example.org/" title="Erwan Poiré | Portfolio">
                     <img alt="Footer logo" src="/fav.png"
                         height="40px" width="40px">
@@ -1086,7 +1249,7 @@ Détail des résultats :</p>
                     title="Designed and developed by gurusabarish">
                     Hugo Profile
                 </a>
-            </div>
+            </div>-->
         </div>
     </div>
 </div></footer>
